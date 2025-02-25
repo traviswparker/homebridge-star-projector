@@ -40,6 +40,12 @@
             "description": "Tuya Key / API Secret",
             "required": true
           },
+          "ip": {
+            "title": "IP",
+            "type": "string",
+            "description": "Device IP",
+            "required": false
+          },
 	  "tuyaVersion": {
             "title": "Tuya API Version",
             "type": "string",
@@ -240,6 +246,7 @@
             "projectors[].name",
             "projectors[].tuyaId",
             "projectors[].tuyaKey",
+	    "projectors[].ip",
             "projectors[].tuyaVersion",
             {
               "key": "projectors[]",
