@@ -64,8 +64,7 @@ function StarProjector(log, config, api) {
             const tuya = new TuyAPI({
               id: device.tuyaId,
               key: device.tuyaKey,
-              ip: device.ip || null,
-              version: '3.3',
+              version: device.tuyaVersion ? parseFloat(device.tuyaVersion) : 3.3
             });
 
             this.projectors.set(device.name, tuya);
